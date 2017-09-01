@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF632CF21F593B4C00F4FF58 /* SDCityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF632CF11F593B4C00F4FF58 /* SDCityPickerViewController.swift */; };
+		EF632CF51F593C9C00F4FF58 /* SDConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF632CF41F593C9C00F4FF58 /* SDConst.swift */; };
 		EF9B659F1F564FA400A9ED3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B659E1F564FA400A9ED3B /* AppDelegate.swift */; };
 		EF9B65A11F564FA400A9ED3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B65A01F564FA400A9ED3B /* ViewController.swift */; };
 		EF9B65A41F564FA400A9ED3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9B65A21F564FA400A9ED3B /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF632CF11F593B4C00F4FF58 /* SDCityPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCityPickerViewController.swift; sourceTree = "<group>"; };
+		EF632CF41F593C9C00F4FF58 /* SDConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDConst.swift; sourceTree = "<group>"; };
 		EF9B659B1F564FA400A9ED3B /* SDCityPicker_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDCityPicker_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9B659E1F564FA400A9ED3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9B65A01F564FA400A9ED3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -74,6 +78,36 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EF632CED1F593B2400F4FF58 /* SDConfig */ = {
+			isa = PBXGroup;
+			children = (
+				EF632CF41F593C9C00F4FF58 /* SDConst.swift */,
+			);
+			path = SDConfig;
+			sourceTree = "<group>";
+		};
+		EF632CEE1F593B2400F4FF58 /* SDController */ = {
+			isa = PBXGroup;
+			children = (
+				EF632CF11F593B4C00F4FF58 /* SDCityPickerViewController.swift */,
+			);
+			path = SDController;
+			sourceTree = "<group>";
+		};
+		EF632CEF1F593B2400F4FF58 /* SDModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDModel;
+			sourceTree = "<group>";
+		};
+		EF632CF01F593B2400F4FF58 /* SDView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SDView;
+			sourceTree = "<group>";
+		};
 		EF9B65921F564FA400A9ED3B = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +131,10 @@
 		EF9B659D1F564FA400A9ED3B /* SDCityPicker_Swift */ = {
 			isa = PBXGroup;
 			children = (
+				EF632CED1F593B2400F4FF58 /* SDConfig */,
+				EF632CEE1F593B2400F4FF58 /* SDController */,
+				EF632CEF1F593B2400F4FF58 /* SDModel */,
+				EF632CF01F593B2400F4FF58 /* SDView */,
 				EF9B659E1F564FA400A9ED3B /* AppDelegate.swift */,
 				EF9B65A01F564FA400A9ED3B /* ViewController.swift */,
 				EF9B65A21F564FA400A9ED3B /* Main.storyboard */,
@@ -259,7 +297,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF632CF21F593B4C00F4FF58 /* SDCityPickerViewController.swift in Sources */,
 				EF9B65A11F564FA400A9ED3B /* ViewController.swift in Sources */,
+				EF632CF51F593C9C00F4FF58 /* SDConst.swift in Sources */,
 				EF9B659F1F564FA400A9ED3B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -505,6 +545,7 @@
 				EF9B65C51F564FA400A9ED3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF9B65C61F564FA400A9ED3B /* Build configuration list for PBXNativeTarget "SDCityPicker_SwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +554,7 @@
 				EF9B65C81F564FA400A9ED3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EF9B65C91F564FA400A9ED3B /* Build configuration list for PBXNativeTarget "SDCityPicker_SwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +563,7 @@
 				EF9B65CB1F564FA400A9ED3B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
