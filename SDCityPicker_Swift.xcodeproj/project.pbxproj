@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EF4AC7B41F5969FA0002F810 /* City.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF4AC7B31F5969FA0002F810 /* City.plist */; };
 		EF632CF21F593B4C00F4FF58 /* SDCityPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF632CF11F593B4C00F4FF58 /* SDCityPickerViewController.swift */; };
 		EF632CF51F593C9C00F4FF58 /* SDConst.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF632CF41F593C9C00F4FF58 /* SDConst.swift */; };
+		EF632CF71F594B5F00F4FF58 /* cityList.plist in Resources */ = {isa = PBXBuildFile; fileRef = EF632CF61F594B5F00F4FF58 /* cityList.plist */; };
 		EF9B659F1F564FA400A9ED3B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B659E1F564FA400A9ED3B /* AppDelegate.swift */; };
 		EF9B65A11F564FA400A9ED3B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF9B65A01F564FA400A9ED3B /* ViewController.swift */; };
 		EF9B65A41F564FA400A9ED3B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EF9B65A21F564FA400A9ED3B /* Main.storyboard */; };
@@ -36,8 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EF4AC7B31F5969FA0002F810 /* City.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = City.plist; sourceTree = "<group>"; };
 		EF632CF11F593B4C00F4FF58 /* SDCityPickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDCityPickerViewController.swift; sourceTree = "<group>"; };
 		EF632CF41F593C9C00F4FF58 /* SDConst.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SDConst.swift; sourceTree = "<group>"; };
+		EF632CF61F594B5F00F4FF58 /* cityList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = cityList.plist; sourceTree = "<group>"; };
 		EF9B659B1F564FA400A9ED3B /* SDCityPicker_Swift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDCityPicker_Swift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF9B659E1F564FA400A9ED3B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EF9B65A01F564FA400A9ED3B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -97,6 +101,8 @@
 		EF632CEF1F593B2400F4FF58 /* SDModel */ = {
 			isa = PBXGroup;
 			children = (
+				EF4AC7B31F5969FA0002F810 /* City.plist */,
+				EF632CF61F594B5F00F4FF58 /* cityList.plist */,
 			);
 			path = SDModel;
 			sourceTree = "<group>";
@@ -271,6 +277,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EF9B65A91F564FA400A9ED3B /* LaunchScreen.storyboard in Resources */,
+				EF4AC7B41F5969FA0002F810 /* City.plist in Resources */,
+				EF632CF71F594B5F00F4FF58 /* cityList.plist in Resources */,
 				EF9B65A61F564FA400A9ED3B /* Assets.xcassets in Resources */,
 				EF9B65A41F564FA400A9ED3B /* Main.storyboard in Resources */,
 			);

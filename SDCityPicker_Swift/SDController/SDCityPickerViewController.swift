@@ -11,6 +11,8 @@ import UIKit
 class SDCityPickerViewController: UIViewController ,UITableViewDelegate,UITableViewDataSource{
 
     var cityTable = UITableView()
+    var dataArr = Array<Any>()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "切换城市"
@@ -37,16 +39,16 @@ class SDCityPickerViewController: UIViewController ,UITableViewDelegate,UITableV
     
     //MARK: - TableViewDelegete
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 2
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return dataArr.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell.init(style: UITableViewCellStyle.default, reuseIdentifier: "cellID")
-        cell.textLabel?.text = "haha"
+        cell.textLabel?.text = dataArr[indexPath.row] as? String
         return cell
     }
     
@@ -59,6 +61,23 @@ class SDCityPickerViewController: UIViewController ,UITableViewDelegate,UITableV
 
     }
     
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headView = UIView()
+        headView.frame = CGRect.init(x: 0, y: 0, width: mDeviceWidth, height: 50)
+        
+        headView.backgroundColor = #colorLiteral(red: 0.925409019, green: 0.9255421162, blue: 0.9253799319, alpha: 1)
+        let headLabel = UILabel()
+        headLabel.frame = CGRect.init(x: 20, y: 0, width: mDeviceWidth, height: 50)
+        headLabel.text = "头部"
+        
+        headLabel.textColor = UIColor.gray
+        headView.addSubview(headLabel)
+        return headView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 50
+    }
     
 
     /*
